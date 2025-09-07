@@ -24,7 +24,7 @@ export default function Packages() {
         <div className={styles.packageContainer}>
           <div className={styles.block}>
             <h2>Mortgage Protection Package</h2>
-            <p>Help protect your family's home and safety at death, becoming disabled or terminally ill. You can select that coverage that makes sense to you. The death benefit is paid directly to your beneficiary to take care of financial necessities.</p>
+            <p>Help protect your family&apos;s home and safety at death, becoming disabled or terminally ill. You can select that coverage that makes sense to you. The death benefit is paid directly to your beneficiary to take care of financial necessities.</p>
           </div>
 
           <div className={styles.block}>
@@ -34,7 +34,7 @@ export default function Packages() {
 
           <div className={styles.block}>
             <h2>Whole Life/UIL Insurance Package</h2>
-            <p>Losing a loved one causes emotional distress in addition to financial burdens that arises. Life insurance helps individuals protect their families even after they're gone.</p>
+            <p>Losing a loved one causes emotional distress in addition to financial burdens that arises. Life insurance helps individuals protect their families even after they&apos;re gone.</p>
           </div>
 
           <div className={styles.block}>

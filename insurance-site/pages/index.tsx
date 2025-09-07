@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className={styles.introBlock}>
             <Image src="/Karlos.jpg" alt="Karlos Headshot" className={styles.headshot} width={300} height={375} />
-            <p>I specialize in helping creators, contractors, and small business owners secure peace of mind with tailored insurance plans. With personalized service and 100% transparency, you're in good hands.</p>
+            <p>I specialize in helping creators, contractors, and small business owners secure peace of mind with tailored insurance plans. With personalized service and 100% transparency, you&apos;re in good hands.</p>
           </div>
         </div>
 
@@ -76,12 +76,12 @@ export default function Home() {
       <div className={styles.bodyContainer}>
         <div className={styles.addBlock}>
           <h2>Never Too Late For Life Insurance</h2>
-          <p>Premiums increases as we age and our health worsens but I am committed to finding the best option for you. Life insurance can help give families the security — and benefits — they need to cover many of life’s unexpected expenses. The policy’s death benefit can help cover outstanding debt and help loved ones keep their home and maintain their quality of life — now and in the future</p>
+          <p>Premiums increases as we age and our health worsens but I am committed to finding the best option for you. Life insurance can help give families the security — and benefits — they need to cover many of life&apos;s unexpected expenses. The policy&apos;s death benefit can help cover outstanding debt and help loved ones keep their home and maintain their quality of life — now and in the future</p>
         </div>
 
         <div className={styles.addBlock}>
           <h2>Do Not Fail To Plan</h2>
-          <p>Whether it’s life insurance to protect your family’s quality of life, money to help with your children's education, or tax-deferred, long-term savings for your retirement, I am here to secure your retirement you and your family deserve.</p>
+          <p>Whether it&apos;s life insurance to protect your family&apos;s quality of life, money to help with your children&apos;s education, or tax-deferred, long-term savings for your retirement, I am here to secure your retirement you and your family deserve.</p>
         </div>
 
         <div className={styles.addBlock}>
