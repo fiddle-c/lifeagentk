@@ -36,7 +36,7 @@ export default function Home() {
             <h2>NPN: 21709078</h2>
           </div>
           <div className={styles.introBlock}>
-            <Image src="/Karlos.jpg" alt="Karlos Headshot" className={styles.headshot} width={300} height={375} />
+            <Image src="/Karlos.JPG" alt="Karlos Headshot" className={styles.headshot} width={300} height={375} />
             <p>I specialize in helping creators, contractors, and small business owners secure peace of mind with tailored insurance plans. With personalized service and 100% transparency, you&apos;re in good hands.</p>
           </div>
         </div>
