@@ -56,7 +56,7 @@ export default function ContactMe() {
               rel="noopener noreferrer"
               className={styles.socialLink}
             >
-            <img src="/yelp.svg" alt="yelp"/>
+            <img className={styles.img} src="/yelp.svg" alt="yelp"/>
               Yelp
             </a>
           </div>
