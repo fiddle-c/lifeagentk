@@ -1,0 +1,162 @@
+.button {
+	background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+background-color: #0070f3;
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+button.menuItem {
+	display: none;
+}
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  	transform: scale(1.12);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em;
+  
+}
+
+
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.navContainer {
+  display: flex;
+  gap: 1.5rem;  
+}
+
+.navLinks {
+  width: 100%;  	
+  display: flex;
+  justify-content:end;
+  gap: 3rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  
+	font-size: 1.5em;
+  	transition: transform 0.2s ease;
+}
+.navLinks a:hover {
+  transform: scale(1.1);
+}
+
+/* Full-screen mobile overlay */
+.fullScreenMenu {
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-evenly;
+  
+  z-index: 1000;
+}
+.fullScreenMenu a{
+	text-decoration: none;
+  color: #333;
+    	font-size: 1.5em;
+  	transition: transform 0.2s ease;
+}
+.fullScreenMenu a:hover {
+  transform: scale(1.1);
+}
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+    	transition: transform 0.2s ease;
+
+}
+.closeButton:hover {
+	transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+      .navLinks {
+    display: none;
+  }
+
+	.navContainer {
+		
+		display: block;
+	}
+	.navContainer .button {
+		display: none;
+	}
+
+    .navContainer .button:hover {
+	  background-color: #005bb5;
+  	transform: scale(1.12);
+}
+.navContainer nav {
+		position: absolute;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		min-width: 100vw;
+		min-height: 100vh;
+		background-color: white;
+		z-index: 1000;
+	}
+  .navBar {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+
+    
+  }
+
+	.buttonImg {
+		width: 100%;
+		width: 25px;
+		height: 25px;
+		align-self: center;
+		transition: transform 0.2s ease;
+		
+		color: #59D2FE;
+	filter: brightness(0) saturate(100%) invert(0);
+	}
+	.buttonImg:hover {
+		transform: scale(1.15);
+	}
+  .menuButton {
+    display: block;
+    
+  }
+}

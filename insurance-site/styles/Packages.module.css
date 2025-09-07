@@ -1,0 +1,108 @@
+/* Main container - full height layout */
+.mainContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.packageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: 1fr 1fr;    /* Two equal rows */
+  gap: 2rem; /* Space between grid items */
+  flex: 1; /* Takes up remaining space */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Individual blocks */
+.block {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.block h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.block p,
+.block a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: left;
+}
+
+.block a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.block a:hover {
+  text-decoration: underline;
+}
+
+.mainContainer .bookNow {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  
+}
+
+@media (max-width: 768px) {
+  .packageContainer {
+    grid-template-columns: 1fr; /* Stack vertically on mobile */
+    grid-template-rows: repeat(4, auto);
+    gap: 1.5rem;
+  }
+  
+  .mainContainer {
+    padding: 1rem;
+  }
+  
+  .block {
+    padding: 1.5rem;
+  }
+  
+  .block h2 {
+    font-size: 1.3rem;
+  }
+  
+  .block p,
+  .block a {
+    font-size: 0.9rem;
+  }
+  
+  .bookNow {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .block {
+    padding: 1rem;
+  }
+  
+  .bookNow {
+    font-size: 1.2rem;
+  }
+}

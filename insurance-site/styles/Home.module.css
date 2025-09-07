@@ -1,0 +1,213 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	scrollbar-width: none;
+	overflow-y: scroll;
+	margin: 1em;
+	
+}
+
+.launchContainer {
+	
+	height: 100%;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	align-content: end;
+}
+
+.headshot {
+	max-width: 300px;
+	width: 100%;
+	border-radius: 150px;
+	clip-path: circle();
+}
+
+.title {
+	font-size: 2rem;
+}
+
+.subtitle {
+	font-size: 1.1rem;
+	color: #555;
+}
+
+.introContainer {
+	display: flex;
+	flex-direction: column;
+
+
+
+}
+
+.introContainer h1 {
+	font-size: 4rem;
+	line-height: 0;
+}
+
+.introContainer p {
+	line-height: 1.5;
+	font-size: 1.5rem;
+
+
+}
+
+.introBlock {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.introBlock p {
+	width: 70%;
+
+}
+
+.bodyContainer {
+	display: flex;
+	flex-wrap: wrap;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	justify-content: space-around;
+	gap: 1em 0;
+
+
+
+}
+
+.addBlock {
+	flex-basis: 48%;
+	align-content: space-between;
+}
+
+.addBlock p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+
+}
+
+
+
+.footer {
+	justify-content: center;
+}
+
+.iconContainer a:hover {
+	color: #59D2FE;
+
+}
+
+.iconContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	gap: 5em;
+}
+
+.iconContainer a {
+	line-height: 2;
+	text-decoration: none;
+}
+
+
+.iconItem {
+	width: 100%;
+	max-width: 50px;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: black;
+}
+
+.iconContainer img {
+	width: 100%;
+	max-width: 30px;
+	filter: brightness(0) saturate(100%) invert(0);
+	transition: transform 0.2s;
+}
+
+
+.iconContainer img:hover {
+	transform: scale(1.15);
+
+}
+
+.scrollIndicator {
+	text-align: center;
+	color: #666;
+	font-size: 0.9rem;
+	align-content: end;
+	padding: 1em;
+	animation: fadeInOut 3s infinite;
+}
+
+.scrollIndicator::after {
+	content: '↓';
+	display: block;
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-8px);
+	}
+
+	60% {
+		transform: translateY(-4px);
+	}
+}
+
+@keyframes fadeInOut {
+
+	0%,
+	100% {
+		opacity: 0.6;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.introContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.introBlock {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.introBlock p {
+		width: 80%;
+	}
+	.bodyContainer {
+		flex-direction: column;
+	}
+
+	.iconContainer {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+
+}
