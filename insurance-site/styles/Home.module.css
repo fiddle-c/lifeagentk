@@ -20,8 +20,8 @@
 .headshot {
 	max-width: 300px;
 	width: 100%;
-	border-radius: 150px;
-	clip-path: circle();
+clip-path: circle(43% at 50% 46%);	
+  margin: auto auto; /* Centers the image */
 }
 
 .title {

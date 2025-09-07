@@ -2,8 +2,8 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import NavBar from "./NavBar";
 import Script from "next/script";
-
-
+import Image from "next/image"
+import Link from "next/link"
 export default function Home() {
 
   return (
@@ -36,35 +36,35 @@ export default function Home() {
             <h2>NPN: 21709078</h2>
           </div>
           <div className={styles.introBlock}>
-            <img src="/Karlos.jpg" alt="Karlos Headshot" className={styles.headshot} />
+            <Image src="/Karlos.jpg" alt="Karlos Headshot" className={styles.headshot} width={300} height={375} />
             <p>I specialize in helping creators, contractors, and small business owners secure peace of mind with tailored insurance plans. With personalized service and 100% transparency, you're in good hands.</p>
           </div>
         </div>
 
         <div className={styles.iconContainer}>
-          <a href="https://www.linkedin.com/in/karlosflor/" target="_blank">
+          <Link href="https://www.linkedin.com/in/karlosflor/" target="_blank">
             <div className={styles.iconItem}>
-              <img src="/linkedin.svg" alt="LinkedIn" />
+              <Image src="/linkedin.svg" alt="LinkedIn" width={30} height={30} />
 
             </div>
-          </a>
-          <a href="mailto:kflor@mailfence.com" target="_blank">
+          </Link>
+          <Link href="mailto:kflor@mailfence.com" target="_blank">
             <div className={styles.iconItem}>
-              <img src="/envelope.svg" alt="Email" />
+              <Image src="/envelope.svg" alt="Email" width={30} height={30} />
             </div>
-          </a>
+          </Link>
 
-          <a href="https://x.com/lifeagentfiddle" target="_blank">
+          <Link href="https://x.com/lifeagentfiddle" target="_blank">
             <div className={styles.iconItem}>
-              <img src="/x.svg" alt="X" />
+              <Image src="/x.svg" alt="X" width={30} height={30}/>
             </div>
-          </a>
-          <a href="https://www.yelp.com/biz/life-and-health-insurance-agent-karlos-murrieta?osq=life+insurance&override_cta=Request+a+quote" target="_blank">
+          </Link>
+          <Link href="https://www.yelp.com/biz/life-and-health-insurance-agent-karlos-murrieta?osq=life+insurance&override_cta=Request+a+quote" target="_blank">
             <div className={styles.iconItem}>
-              <img src="/yelp.svg" alt="Yelp" />
+              <Image src="/yelp.svg" alt="Yelp" width={30} height={30}/>
 
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.scrollIndicator}>

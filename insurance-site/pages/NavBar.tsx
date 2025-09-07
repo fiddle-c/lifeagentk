@@ -1,6 +1,7 @@
 import styles from "@/styles/Global.module.css";
 import React, { useState } from 'react';
-
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function NavBar() {
   function openCalendly() {
@@ -22,29 +23,27 @@ export default function NavBar() {
 
         <div className={styles.navLinks}>
 
-          <a href="/">HOME</a>
-          <a href="/Packages">PACKAGES</a>
-          <a href="/AboutMe">ABOUT ME</a>
-          <a href="/ContactMe">CONTACT ME</a>
+        <Link href="/" className="nav-link">Home</Link>
+        <Link href="/Packages" className="nav-link">Packages</Link>
+        <Link href="/AboutMe" className="nav-link">About Me</Link>
+        <Link href="/ContactMe" className="nav-link">Contact Me</Link>
 
         </div>
         <button className={styles.button} onClick={openCalendly}>Book an Appointment</button>
 
 
         <button className={styles.menuButton} onClick={toggleMenu}>
-          <img className={styles.buttonImg} src="/horizontalThreeLines.svg" alt="Menu" />
+          <Image className={styles.buttonImg} src="/horizontalThreeLines.svg" alt="Menu" width={30} height={30} />
         </button>
       </div>
       {menuOpen && (
 
         <div className={styles.fullScreenMenu}>
           <button className={styles.closeButton} onClick={toggleMenu}>✕</button>
-
-          <a href="/" onClick={toggleMenu}>HOME</a>
-          <a href="/Packages" onClick={toggleMenu}>PACKAGES</a>
-
-          <a href="/AboutMe" onClick={toggleMenu}>ABOUT ME</a>
-          <a href="/ContactMe" onClick={toggleMenu}>CONTACT ME</a>
+        <Link href="/" className="nav-link">Home</Link>
+        <Link href="/Packages" className="nav-link">Packages</Link>
+        <Link href="/AboutMe" className="nav-link">About Me</Link>
+        <Link href="/ContactMe" className="nav-link">Contact Me</Link>
           <button className={styles.button} onClick={() => { openCalendly(); toggleMenu(); }}>
             Book an Appointment
           </button>
