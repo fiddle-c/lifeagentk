@@ -76,25 +76,18 @@ export default function Home() {
       <div className={styles.bodyContainer}>
         <div className={styles.addBlock}>
           <h2>Never Too Late For Life Insurance</h2>
-          <p>Premiums increases as we age and our health worsens but I am committed to finding the best option for you. Life insurance can help give families the security — and benefits — they need to cover many of life&apos;s unexpected expenses. The policy&apos;s death benefit can help cover outstanding debt and help loved ones keep their home and maintain their quality of life — now and in the future</p>
+          <p>Premiums increases as we age and our health worsens but I am committed to finding the best option for you. Life insurance can help give families the security and prepare many of life&apos;s unexpected expenses. The policy&apos;s death benefit can help cover debt and keep families in their home and maintain their quality of life.</p>
         </div>
 
         <div className={styles.addBlock}>
-          <h2>Do Not Fail To Plan</h2>
+          <h2>Planning Effectively</h2>
           <p>Whether it&apos;s life insurance to protect your family&apos;s quality of life, money to help with your children&apos;s education, or tax-deferred, long-term savings for your retirement, I am here to secure your retirement you and your family deserve.</p>
         </div>
 
         <div className={styles.addBlock}>
-          <h2>Multiple Carriers</h2>
+          <h2>Multiple Carriers Multiple Options</h2>
           <p>I work with multiple carriers and that gives me the opportunity to provide coverage that fits your financial budget and goals. We go over different options, prices, and strategies so we can secure a peace of mind.</p>
         </div>
-
-        <div className={styles.addBlock}>
-          <h2>Multiple Options</h2>
-          <p>We can find a carrier that works with your financial budget, goals, and needs in minutes. Book an appointment with me today and find out what options you have!</p>
-        </div>
-
-
       </div>
     </div>
     </>
